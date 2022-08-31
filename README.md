@@ -1,4 +1,4 @@
-# pizza-delivery-web-app1
+# Pizza Delivery Website
 ## Author
 [Lynnmwaniki](https://github.com/Lynnmwaniki/pizza-delivery-web-app1)
 
