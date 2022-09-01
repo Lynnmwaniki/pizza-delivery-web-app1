@@ -5,10 +5,272 @@
         <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css"/>
-        <title>Pizza Delivery</title>
+        <script src="index.js"></script>
+        <title>Mwaniki's Pizza</title>
     </head>
     <body>
-        <script src="index.js"></script>
+        <!--navbar section-->
+        <nav class="navbar">
+            <div class="navbar__container">
+            <a href="#" id="navbar__logo">Mwaniki's Pizza</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar1">
+            
+          </div>
+          </div>
+            <ul class="navbar__menu">
+            <li class="navbar__item">
+             <a href="#home" class="navbar__links" id="home-page">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#menu" class="navbar__links" id="menu-page">Menu</a>
+             </li>
+             <li class="navbar__item">
+              <a href="#order" class="navbar__links" id="order-page">Order Now</a>
+             </li>
+             <li class="navbar__item">
+              <a href="#about" class="navbar__links" id="about-page">About</a>
+             </li>
+             <li class="navbar__item">
+              <a href="#contact" class="navbar__links" id="contact-page">Contact</a>
+             </li>
+             
+          </ul>
+         </div>
+         </nav>
+
+         <!--home section-->
+         <div class="home" id="home">
+            <div class="home_container">
+                <!--<img src="images/home-image.jpg" alt="" width="560px" height="400px" id="home-img"> -->
+                <h1>WELCOME TO MWANIKI'S PIZZA SHOP</h1>
+                <h1 class="home_heading">We make and deliver delicious pizza to your doorstep!</h1>
+                <p class="home_details">OPENING HOURS:<br>FROM MONDAY TO SUNDAY<BR> 9:00am - 10:00pm</p>
+            </div>
+         </div>
+
+         <!--menu section-->
+         <div class="menu" id="menu">
+            <div class="menu_container">
+                <div>
+                    <h2 class="menu_subtitle">What will you have today?</h2>
+                    <p class="menu_text">Taste our sumptuous finger-licking pizzas from the pizza images below!</p>
+
+                    <div class="row" id="row">
+                    <div class="column" id="column">   
+                    <div class="card">
+                        <img src="images/bacon&chicken.jpg" alt="" style="width:100%">
+                        <h1>Bacon and chicken pizza </h1>
+                        <p class="price">Small ksh 500 <br> Medium ksh 800 <br> Large ksh 1200 <br> Extra large ksh 1500</p>
+                        <p>lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                      </div>
+                    </div>
+
+                    <div class="column" id="column">   
+                      <div class="card">
+                        <img src="images/pepperoni.jpg" alt="" style="width:100%">
+                        <h1>Pepperoni pizza </h1>
+                        <p class="price">Small ksh 500 <br> Medium ksh 800 <br> Large ksh 1200 <br> Extra large ksh 1500</p>
+                        <p>lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                      </div>
+                    </div>
+
+                    <div class="column" id="column">   
+                      <div class="card">
+                        <img src="images/meat-deluxe.jpg" alt="" style="width:100%">
+                        <h1>Meat deluxe pizza </h1>
+                        <p class="price">Small ksh 500 <br> Medium ksh 800 <br> Large ksh 1200 <br> Extra large ksh 1500</p>
+                        <p>lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                      </div>
+                    </div>
+
+                    <div class="column" id="column">   
+                      <div class="card">
+                        <img src="images/veggie-pizza.jpg" alt="" style="width:100%">
+                        <h1>Veggie pizza </h1>
+                        <p class="price">Small ksh 500 <br> Medium ksh 800 <br> Large ksh 1200 <br> Extra large ksh 1500</p>
+                        <p>lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                      </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <!--order section-->
+         <div class="order" id="order">
+          <div class="order_container">  
+            <h2>Place your order here</h2>
+  
+            <form onsubmit="myOrder()" id="formOrder"> 
+          <div class="row">    
+                <div class="col-25">    
+                  <label for="pizza_type">Select type of pizza</label>    
+                </div>    
+                <div class="col-75">    
+                  <select id="pizza" name="pizza">    
+                      <option value="none">Select pizza</option>    
+                    <option value="pepperoni">pepperoni</option>    
+                    <option value="veggie">veggie</option>    
+                    <option value="meat">meat deluxe</option>    
+                    <option value="bacon">bacon and chicken</option>    
+                  </select>    
+                </div>    
+              </div> 
+          
+          <div class="row">    
+                <div class="col-25">    
+                  <label for="size">Select size of pizza</label>    
+                </div>    
+                <div class="col-75">    
+                  <select id="size" name="size">    
+                      <option value="none">Select size</option>    
+                    <option value="small">small</option>    
+                    <option value="medium">medium</option>    
+                    <option value="large">large</option>    
+                    <option value="extra">extra large</option>     
+                  </select>    
+                </div>    
+              </div> 
+              
+           <div class="row">    
+                <div class="col-25">    
+                  <label for="crust">Select crust of pizza</label>    
+                </div>    
+                <div class="col-75">    
+                  <select id="crust" name="crust">    
+                      <option value="none">Select crust</option>    
+                    <option value="thin">thin</option>    
+                    <option value="medium">medium</option>    
+                    <option value="thick">thick</option>       
+                  </select>    
+                </div>    
+              </div> 
+            
+             <div class="row">    
+                <div class="col-25">    
+                  <label for="top">Add extra toppings</label>    
+                </div>    
+                <div class="col-75">    
+                  <select id="top" name="top">    
+                      <option value="none">Select toppings</option>    
+                    <option value="cheese">extra cheese</option>    
+                    <option value="bacon">extra bacon</option>    
+                    <option value="chicken">extra chicken</option>    
+                    <option value="onions">extra onions</option>     
+                  </select>    
+                </div>    
+              </div> 
+              
+            <div class="row">    
+                <div class="col-25">    
+                  <label for="size">Quantity</label>    
+                </div>    
+                <div class="col-75">    
+                  <select id="quantity" name="quantity">    
+                      <option value="none">Select number</option>    
+                    <option value="1">1</option>    
+                    <option value="2">2</option>    
+                    <option value="3">3</option>    
+                    <option value="4">4 </option>     
+                  </select>    
+                </div>    
+              </div> 
+              
+            <div class="row">    
+                <div class="col-25">    
+                  <label for="delivery">Delivery option</label>    
+                </div>    
+                <div class="col-75">    
+                  <select id="delivery" name="delivery">    
+                      <option value="none">Select option</option>    
+                    <option value="front">pick up on front</option>    
+                    <option value="home">delivered to your address</option>        
+                  </select>    
+                </div>    
+              </div> 
+          
+          <div class="row">    
+                <input type="submit" value="Submit Order" class="order_btn">    
+              </div> 
+            </form>
+              </div>
+              <p>Payment details:
+                <br> Mpesa till number - 567567
+                <br> Family bank - business no: 247247 , account number: your receipt number
+              </p>
+      </div>
+
+
+         <!--about section-->
+         <div class="about" id="about">
+            <div class="about_container">
+                <div>
+                    <h2>About Us</h2>
+                    <h2 class="about_subtitle">The company's core business revolves around the production of quality pizza, packaging and delivering of pizza.</h2>
+                    <p class="about_details">Mission: Mwanikis pizza is a fast-food outlet committed to the provision of quality delicious food and beverage products that exceed customer expectations, with caring of community and the environment.
+                        <br> Vision: To be the fast-food company of choice providing quality food and beverages products of international standing at an affordable price and value for money.
+                        <br> Core values: 
+                        <br>• Integrity.
+                        <br>• Exceeding customer’s expectations.
+                        <br>• Respect and diversity.
+                    </p>
+                    <img src="images/order-image.jpg" alt="" width="300px" height="40%" class="about_img">
+                </div>
+            </div>
+         </div>
+
+         <!--contact section-->
+         <div class="contact" id="contact">
+            <h2 class="contact_title">Contact Us</h2>
+            <div class="contact_container">
+              <form onsubmit="myFunction()" id="contact_form">    
+                <div class="row">    
+                  <div class="col-25">    
+                    <label for="fname">Full Name</label>    
+                  </div>    
+                  <div class="col-75">    
+                    <input type="text" id="fname" name="fullname" placeholder="Your name..">    
+                  </div>    
+                </div>    
+                
+                <div class="row">    
+                    <div class="col-25">    
+                      <label for="email">Email Address</label>    
+                    </div>    
+                    <div class="col-75">    
+                      <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+                    </div>    
+                  </div>    
+                
+                <div class="row">    
+                  <div class="col-25">    
+                    <label for="feed_back">Feed Back</label>    
+                  </div>    
+                  <div class="col-75">    
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+                  </div>    
+                </div>    
+                <div class="row">    
+                  <input type="submit" value="Submit" class="contact_btn">    
+                </div>    
+              </form> 
+            </div>
+         </div>
+
+         <!--footer section-->
+         <div class="footer">
+            <div class="footer_container"></div>
+            <p class="footer_title">Mwanikis Pizza</p>
+            <p>Email Address: @mwanikispizza@gmail.com
+                <br> Phone Number: +254722123456
+                <br>&#169; 2022 copyright all right reserved
+            </p>
+         </div>
+        </div>
     </body>
 
 </html>
